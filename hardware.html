@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LaPPy AddA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            options
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="laptop.html">LAPTOS</a></li>
+                            <li><a class="dropdown-item" href="hardware.html">ACCESSORIES</a></li>
+                            <li><a class="dropdown-item" href="#">SOFTWARE</a></li>
+                            <li><a class="dropdown-item" href="#">INSTALLATION</a></li>
+                            <li><a class="dropdown-item" href="#">REPAIRING</a></li>
+                            <li><a class="dropdown-item" href="#">EXCHANGE</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="contactus.html">CONTACT US </a></li>
+
+                        </ul>
+                    </li>
+                    dark
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>&nbsp;&nbsp;&nbsp;
+                </form>
+                <div class="mx-3" my="4">
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#LoginModal">Login</button>&nbsp;
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#RegisterModal">Register</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Button trigger modal -->
+
+
+    <!--login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginModalLabel">Login to LaPPy AddA</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button trigger modal -->
+
+
+    <!-- REGISTER Modal -->
+    <div class="modal fade" id="RegisterModal" tabindex="-1" aria-labelledby="RegisterModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="RegisterModalLabel">Register Yourself with us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First name"
+                                    aria-label="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            </div>
+                        </div>
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 my-2">
+        <div class="col ">
+            <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="acc1.jpg" alt="" class="src">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                        dy=".3em">Thumbnail</text>
+                </svg>
+
+                <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                        dy=".3em">Thumbnail</text>
+                </svg>
+
+                <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                        dy=".3em">Thumbnail</text>
+                </svg>
+
+                <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                        dy=".3em">Thumbnail</text>
+                </svg>
+
+                <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                        dy=".3em">Thumbnail</text>
+                </svg>
+
+                <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+
+
+
+
+    <div class="container marketing ">
+
+
+        <select class="form-select my-3" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">Baclpack</option>
+            <option value="2">Batteries</option>
+            <option value="3">Charger</option>
+            <option value="4">Headset</option>
+            <option value="5">Router</option>
+        </select>
+
+
+        <!-- <div
+            class="dropdown-menu dropdown-menu-dark d-block position-static border-0 pt-0 mx-0 rounded-3 shadow overflow-hidden w-280px">
+            <form class="p-2 mb-2 bg-dark border-bottom border-dark">
+                <input type="search" class="form-control form-control-dark" autocomplete="false"
+                    placeholder="Type to filter...">
+            </form>
+            <ul class="list-unstyled mb-0">
+                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                        <span class="d-inline-block bg-success rounded-circle p-1"></span>
+                        Action
+                    </a></li>
+                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                        <span class="d-inline-block bg-primary rounded-circle p-1"></span>
+                        Another action
+                    </a></li>
+                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                        <span class="d-inline-block bg-danger rounded-circle p-1"></span>
+                        Something else here
+                    </a></li>
+                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                        <span class="d-inline-block bg-info rounded-circle p-1"></span>
+                        Separated link
+                    </a></li>
+            </ul>
+        </div> -->
+
+
+
+        <main>
+            <div class="container">
+                <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+                    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 py-3">
+                            <h2 class="display-5">HDD & SSD </h2>
+                            <p class="lead">Buy HDD & SSD. Starting from <b>Rs 1500</b>
+                            </p>
+                            <a href="hddsdd.html"><button type="button" class="btn btn-dark">View All</button></a>
+                        </div>
+                        <div class="bg-light shadow-sm mx-auto"
+                            style="width: 85%; height: 300px; border-radius: 21px 21px 0 0;">
+                            <img src="hdd.jpg" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;" alt=""
+                                class="src">
+
+                        </div>
+                    </div>
+
+                    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 p-3">
+                            <h2 class="display-5">Monitors</h2>
+                            <p class="lead">Buy best Monitors. Starting from <b>Rs 8000</b></p>
+                            <a href="#html"><button type="button" class="btn btn-dark">View All</button></a>
+                        </div>
+                        <div class="bg-dark shadow-sm mx-auto"
+                            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                            <img src="monitor.jpg" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;"
+                                alt="" class="src">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+                    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 p-3">
+                            <h2 class="display-5">keybooard and Mouse</h2>
+                            <p class="lead">Buy Best Quality Keyboard and Mouse<br>
+                                starting from <b>Rs 500</b></p>
+                            <a href="key.html"><button type="button" class="btn btn-dark">View All</button></a>
+                        </div>
+                        <div class="bg-dark shadow-sm mx-auto"
+                            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                            <img src="key.jpg" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;" alt=""
+                                class="src">
+                        </div>
+                    </div>
+                    <div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 py-3">
+                            <h2 class="display-5">Laptop Bags</h2>
+                            <p class="lead">Buy Laptops Bags From here best Quality starting from <br>
+                                <b>Rs 1000</b>
+                            </p> <a href="bag.html"><button type="button" class="btn btn-dark">View All</button></a>
+                        </div>
+                        <div class="bg-light shadow-sm mx-auto"
+                            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                            <img src="acc1.jpg" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;" alt=""
+                                class="src">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+                    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 p-3">
+                            <h2 class="display-5">Ram </h2>
+                            <p class="lead">Buy Ram of your choice. Starting from <b>Rs 4000</b></p> <button
+                                type="button" class="btn btn-dark
+                                    ">View All</button>
+                        </div>
+                        <div class="bg-body shadow-sm mx-auto"
+                            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                            <img src="ram.jpg" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;" alt=""
+                                class="src">
+                        </div>
+                    </div>
+                    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 py-3">
+                            <h2 class="display-5">AMD 5</h2>
+                            <p class="lead">Buy AMD 5 series laptops. Starting from <b>Rs 22000</b>
+
+                            </p> <button type="button" class="btn btn-dark
+                                ">View All</button>
+                        </div>
+                        <div class="bg-body shadow-sm mx-auto"
+                            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                            <img src="laptop06.png" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;"
+                                alt="" class="src">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+                    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 p-3">
+                            <h2 class="display-5">AMD 7</h2>
+                            <p class="lead">Buy AMD 7 series Laptops. best for multitasking.<br>Starting from <b>Rs
+                                    32000</b></p> <button type="button" class="btn btn-dark
+                                    ">View All</button>
+                        </div>
+                        <div class="bg-body shadow-sm mx-auto"
+                            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                            <img src="laptop07.jpg" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;"
+                                alt="" class="src">
+                        </div>
+                    </div>
+                    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 py-3">
+                            <h2 class="display-5">Macbook</h2>
+                            <p class="lead">Buy Macbook. Best in market for everything.
+                                <br>Starting from <b>Rs 65000</b>
+                            </p> <button type="button" class="btn btn-dark
+                                ">View All</button>
+                        </div>
+                        <div class="bg-body shadow-sm mx-auto"
+                            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                            <img src="laptop08.jpg" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;"
+                                alt="" class="src">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+                    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 py-3">
+                            <h2 class="display-5">PC </h2>
+                            <p class="lead">Buy PC of all range. Starting from <b>Rs 15000</b>
+                            </p>
+                            <a href="i3.html"><button type="button" class="btn btn-dark">View All</button></a>
+                        </div>
+                        <div class="bg-light shadow-sm mx-auto"
+                            style="width: 85%; height: 300px; border-radius: 21px 21px 0 0;">
+                            <img src="laptop09.jpg" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;"
+                                alt="" class="src">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+
+    <div class="container">
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2022 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#twitter"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#instagram"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#facebook"></use>
+                        </svg></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>s

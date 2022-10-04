@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LaPPy AddA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            options
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="laptop.html">LAPTOS</a></li>
+                            <li><a class="dropdown-item" href="hardware.html">ACCESSORIES</a></li>
+                            <li><a class="dropdown-item" href="#">SOFTWARE</a></li>
+                            <li><a class="dropdown-item" href="#">INSTALLATION</a></li>
+                            <li><a class="dropdown-item" href="#">REPAIRING</a></li>
+                            <li><a class="dropdown-item" href="#">EXCHANGE</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="contactus.html">CONTACT US </a></li>
+
+                        </ul>
+                    </li>
+                    dark
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>&nbsp;&nbsp;&nbsp;
+                </form>
+                <div class="mx-3" my="4">
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#LoginModal">Login</button>&nbsp;
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#RegisterModal">Register</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Button trigger modal -->
+
+
+    <!--login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginModalLabel">Login to LaPPy AddA</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button trigger modal -->
+
+
+    <!-- REGISTER Modal -->
+    <div class="modal fade" id="RegisterModal" tabindex="-1" aria-labelledby="RegisterModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="RegisterModalLabel">Register Yourself with us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First name"
+                                    aria-label="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            </div>
+                        </div>
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="container marketing ">
+        <div class="row my-4">
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="content1.png" alt=""
+                    class="src">
+
+                <h2>HP 240 G5</h2>
+                <p>HP 240 G5, i3 5th Gen.| 8Gb Ram.| 500Gb hdd.| With WEB CAM price<br><b>Rs 11,500</b>.</p>
+                <p><a class="btn btn-secondary" href="#">Proceed to Buy »</a></p>
+            </div>
+
+            <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                        dy=".3em">140x140</text>
+                </svg>
+
+                <h2>HP 240 G5</h2>
+                <p>HP 240 G5 i3 6th Gen.|8 Gb Ram.| 500Gb hdd.|With WEB CAM price<br><b>Rs 12,500
+                    </b>.</p>
+                <p><a class="btn btn-secondary" href="#">Proceed to Buy »</a></p>
+            </div>
+
+            <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                        dy=".3em">140x140</text>
+                </svg>
+
+                <h2>Dell Latitude 2420</h2>
+                <p>Dell Larirude 2420 i3 2nd Gen.| 4Gb Ram,| 500Gb hdd.| Web cam. Price<br><b>Rs 9,000</b></p>
+                <p><a class="btn btn-secondary" href="#">Proceed to buy »</a></p>
+            </div>
+            <br>
+            <div class="col-lg-4  py-4 my-4 border-top">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                        dy=".3em">140x140</text>
+                </svg>
+
+                <h2>Dell Latitude 2420</h2>
+                <p>Dell Larirude 2420 i3 3rd Gen.| 4Gb Ram,| 500Gb hdd.| Web cam. Price<br><b>Rs 9,500</b></p>
+                <p><a class="btn btn-secondary" href="#">Proceed to buy »</a></p>
+
+
+            </div>
+            <div class="col-lg-4 py-4 my-4 border-top ">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                        dy=".3em">140x140</text>
+                </svg>
+
+                <h2>Dell Latitude 3470</h2>
+                <p>Dell Larirude 3470 i3 6th Gen.| 8Gb Ram.| 500Gb hdd.| Web cam. Price<br><b>Rs 14,500</b></p>
+                <p><a class="btn btn-secondary" href="#">Proceed to buy »</a></p>
+
+
+            </div>
+            <div class="col-lg-4 py-4 my-4 border-top">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                        dy=".3em">140x140</text>
+                </svg>
+
+                <h2>Lenovo L 420</h2>
+                <p>Lenovo L 420 i3 2nd Gen.| 4Gb Ram.| 500Gb hdd.| Web cam. Price<br><b>Rs 9,000</b></p>
+                <p><a class="btn btn-secondary" href="#">Proceed to buy »</a></p>
+
+
+            </div>
+            <div class="col-lg-4 py-4 my-4 border-top">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                        dy=".3em">140x140</text>
+                </svg>
+
+                <h2>Lenovo B 40-70</h2>
+                <p>Lenovo B 40-70 i3 4th Gen.| 8Gb Ram.| 500Gb hdd.| Web cam. Price<br><b>Rs 11,000</b></p>
+                <p><a class="btn btn-secondary" href="#">Proceed to buy »</a></p>
+
+
+            </div>
+            <div class="col-lg-4 py-4 my-4 border-top">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                        dy=".3em">140x140</text>
+                </svg>
+
+                <h2>Lenovo E 40-80-</h2>
+                <p>Lenovo E 40-80 i3 5th Gen.| 8Gb Ram.| 500Gb hdd.| Web cam. Price<br><b>Rs 11,500</b></p>
+                <p><a class="btn btn-secondary" href="#">Proceed to buy »</a></p>
+            </div>
+
+            <div class="col-lg-4 py-4 my-4 border-top">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                        dy=".3em">140x140</text>
+                </svg>
+
+                <h2>Lenovo E 480 </h2>
+                <p>Lenovo E 480 i3 7th Gen.| 8Gb Ram.| 500Gb hdd.| Web cam. Price<br><b>Rs 14,500</b></p>
+                <p><a class="btn btn-secondary" href="#">Proceed to buy »</a></p>
+            </div>
+
+            <div class="col-lg-4 py-4 my-4 border-top">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                        dy=".3em">140x140</text>
+                </svg>
+
+                <h2>HP 240 G4 </h2>
+                <p>HP 240 G4 i3 5th Gen.| 8Gb Ram.| 500Gb hdd.| Web cam. Price<br><b>Rs 11,500</b></p>
+                <p><a class="btn btn-secondary" href="#">Proceed to buy »</a></p>
+            </div>
+
+            <div class="col-lg-4 py-4 my-4 border-top">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                        dy=".3em">140x140</text>
+                </svg>
+
+                <h2>HP 240 G5</h2>
+                <p>HP 240 G5 i3 5th Gen.| 8Gb Ram.| 500Gb hdd.| Web cam. Price<br><b>Rs 11,500</b></p>
+                <p><a class="btn btn-secondary" href="#">Proceed to buy »</a></p>
+            </div>
+
+            <div class="col-lg-4 py-4 my-4 border-top">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                        dy=".3em">140x140</text>
+                </svg>
+
+                <h2>HP 240 G5 </h2>
+                <p>HP 240 G5 i3 6th Gen.| 8Gb Ram.| 500Gb hdd.| Web cam. Price<br><b>Rs 12,500</b></p>
+                <p><a class="btn btn-secondary" href="#">Proceed to buy »</a></p>
+            </div>
+
+            <div class="col-lg-4 py-4 my-4 border-top">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                        dy=".3em">140x140</text>
+                </svg>
+
+                <h2>Acer Travelmate P246</h2>
+                <p>Acer Travelmate P246 i3 4th Gen.| 8Gb Ram.| 500Gb hdd.| Web cam. Price<br><b>Rs 11,000</b></p>
+                <p><a class="btn btn-secondary" href="#">Proceed to buy »</a></p>
+            </div>
+
+
+            <div class="col-lg-4 py-4 my-4 border-top">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                        dy=".3em">140x140</text>
+                </svg>
+
+                <h2>Acer Travelmate P249</h2>
+                <p>Acer Travelmate P249 i3 6th Gen.| 8Gb Ram.| 500Gb hdd.| Web cam. Price<br><b>Rs 13,000</b></p>
+                <p><a class="btn btn-secondary" href="#">Proceed to buy »</a></p>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 my-2">
+        <div class="col ">
+            <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="acc1.jpg" alt=""
+                    class="src">
+
+                <div class="card-body">
+                    <p class="card-text font-style-">
+                    <h2>HP 240 G5</h2><br>HP 240 G5, i3 5th Gen.| 8Gb Ram.| 500Gb hdd.| With WEB CAM
+                    price<br>
+                    <p><s>MRP Rs 15,500</s></p>
+                    Deal Price :-
+                    <b>Rs 11,500</b>.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <p><a class="btn btn-secondary" href="#">Proceed to Buy »</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="acc1.jpg" alt=""
+                    class="src">
+
+                <div class="card-body">
+                    <p class="card-text">
+                    <h2>Dell Latitude 2420</h2><br> HP 240 G5 i3 6th Gen.|8 Gb Ram.| 500Gb hdd.|With WEB CAM
+                    price<br>
+                    <p><s>MRP Rs 16,500</s></p>Deal Price :-
+                    <b>Rs 12,500 </b>.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <p><a class="btn btn-secondary" href="#">Proceed to Buy »</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="acc1.jpg" alt=""
+                    class="src">
+
+                <div class="card-body">
+                    <p class="card-text">
+                    <h2>Dell Latitude 2420</h2><br>Dell Larirude 2420 i3 2nd Gen.| 4Gb Ram,| 500Gb hdd.| Web cam.
+                    Price<br>
+                    <p><s>MRP Rs 13,000</s></p>Deal Price :-
+                    <b>Rs 9,000</b></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <p><a class="btn btn-secondary" href="#">Proceed to Buy »</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="acc1.jpg" alt=""
+                    class="src">
+
+                <div class="card-body">
+                    <p class="card-text">
+                    <h2>Dell Latitude 2420</h2><br>Dell Larirude 2420 i3 3rd Gen.| 4Gb Ram,| 500Gb hdd.| Web cam.
+                    Price<br>
+                    <p><s>MRP Rs 13,500</s></p>Deal Price :-
+                    <b>Rs 9,500</b></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <p><a class="btn btn-secondary" href="#">Proceed to Buy »</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="acc1.jpg" alt=""
+                    class="src">
+
+                <div class="card-body">
+                    <p class="card-text">
+                    <h2>Dell Latitude 3470</h2><br>Dell Larirude 3470 i3 6th Gen.| 8Gb Ram.| 500Gb hdd.| Web cam.
+                    Price<br>
+                    <p><s>MRP Rs 18,500</s></p>Deal Price :-
+                    <b>Rs 14,500</b></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <p><a class="btn btn-secondary" href="#">Proceed to Buy »</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="acc1.jpg" alt=""
+                    class="src">
+
+                <div class="card-body">
+                    <p class="card-text">
+                    <h2>Lenovo L 420</h2><br>Lenovo L 420 i3 2nd Gen.| 4Gb Ram.| 500Gb hdd.| Web cam. Price<br>
+                    <p><s>MRP Rs 13,000</s></p>Deal Price :-
+                    <b>Rs 9,000</b></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <p><a class="btn btn-secondary" href="#">Proceed to Buy »</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="acc1.jpg" alt=""
+                    class="src">
+
+                <div class="card-body">
+                    <p class="card-text">
+                    <h2>Lenovo B 40-70</h2><br>Lenovo B 40-70 i3 4th Gen.| 8Gb Ram.| 500Gb hdd.| Web cam. Price<br>
+                    <p><s>MRP Rs 15,000</s></p>Deal Price :-
+                    <b>Rs 11,000</b></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <p><a class="btn btn-secondary" href="#">Proceed to Buy »</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="acc1.jpg" alt=""
+                    class="src">
+
+                <div class="card-body">
+                    <p class="card-text">
+                    <h2>Lenovo E 40-80-</h2><br>
+                    Lenovo E 40-80 i3 5th Gen.| 8Gb Ram.| 500Gb hdd.| Web cam. Price<br>
+                    <p><s>MRP Rs 15,500</s></p>Deal Price :-
+                    <b>Rs 11,500</b></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <p><a class="btn btn-secondary" href="#">Proceed to Buy »</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="acc1.jpg" alt=""
+                    class="src">
+
+                <div class="card-body">
+                    <p class="card-text">
+                    <h2>Lenovo E 480 </h2><br>
+                    Lenovo E 480 i3 7th Gen.| 8Gb Ram.| 500Gb hdd.| Web cam. Price<br>
+                    <p><s>MRP Rs 18,500</s></p>Deal Price :-
+                    <b>Rs 14,500</b></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <p><a class="btn btn-secondary" href="#">Proceed to Buy »</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="acc1.jpg" alt=""
+                    class="src">
+
+                <div class="card-body">
+                    <p class="card-text">
+                    <h2>HP 240 G4 </h2><br>
+                    HP 240 G4 i3 5th Gen.| 8Gb Ram.| 500Gb hdd.| Web cam. Price<br>
+                    <p><s>MRP Rs 15,500</s></p>Deal Price :-
+                    <b>Rs 11,500</b></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <p><a class="btn btn-secondary" href="#">Proceed to Buy »</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="acc1.jpg" alt=""
+                    class="src">
+
+                <div class="card-body">
+                    <p class="card-text">
+                    <h2>HP 240 G5</h2><br>
+                    HP 240 G5 i3 5th Gen.| 8Gb Ram.| 500Gb hdd.| Web cam. Price<br>
+                    <p><s>MRP Rs 15,500</s></p>Deal Price :-
+                    <b>Rs 11,500</b></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <p><a class="btn btn-secondary" href="#">Proceed to Buy »</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="acc1.jpg" alt=""
+                    class="src">
+
+                <div class="card-body">
+                    <p class="card-text">
+                    <h2>HP 240 G5 </h2><br>
+                    HP 240 G5 i3 6th Gen.| 8Gb Ram.| 500Gb hdd.| Web cam. Price<br>
+                    <p><s>MRP Rs 16,500</s></p>Deal Price :-
+                    <b>Rs 12,500</b></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <p><a class="btn btn-secondary" href="#">Proceed to Buy »</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="acc1.jpg" alt=""
+                    class="src">
+
+                <div class="card-body">
+                    <p class="card-text">
+                    <h2>Acer Travelmate P246</h2><br>
+                    Acer Travelmate P246 i3 4th Gen.| 8Gb Ram.| 500Gb hdd.| Web cam. Price<br>
+                    <p><s>MRP Rs 15,000</s></p>Deal Price :-
+                    <b>Rs 11,000</b></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <p><a class="btn btn-secondary" href="#">Proceed to Buy »</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="acc1.jpg" alt=""
+                    class="src">
+
+                <div class="card-body">
+                    <p class="card-text">
+                    <h2>Acer Travelmate P249</h2><br>
+                    Acer Travelmate P249 i3 6th Gen.| 8Gb Ram.| 500Gb hdd.| Web cam. Price<br>
+                    <p><s>MRP Rs 17,000</s></p>Deal Price :-
+                    <b>Rs 13,000</b></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <p><a class="btn btn-secondary" href="#">Proceed to Buy »</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container">
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2022 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#twitter"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#instagram"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#facebook"></use>
+                        </svg></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
